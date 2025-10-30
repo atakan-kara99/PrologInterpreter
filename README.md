@@ -1,38 +1,38 @@
-\# Prolog Interpreter in Haskell
+# Prolog Interpreter in Haskell
 
 
 
-This project is a small \*\*Prolog interpreter\*\* written in \*\*Haskell\*\*.
+This project is a small **Prolog interpreter** written in **Haskell**.
 
-It includes a parser, unification engine, substitution system, and an interactive REPL interface supporting both \*\*DFS\*\* and \*\*BFS\*\* search strategies for SLD-resolution.
-
-
-
-\## ✨ Features
+It includes a parser, unification engine, substitution system, and an interactive REPL interface supporting both **DFS** and **BFS** search strategies for SLD-resolution.
 
 
 
-\* Parses Prolog programs and goals
-
-\* Supports Prolog-style terms, variables, rules \& lists
-
-\* Implements \*\*unification\*\*
-
-\* Performs \*\*SLD resolution\*\*
-
-\* Choice of search strategy:
+## ✨ Features
 
 
 
-&nbsp; \* Depth-first search (`dfs`)
+* Parses Prolog programs and goals
 
-&nbsp; \* Breadth-first search (`bfs`)
+* Supports Prolog-style terms, variables, rules & lists
 
-\* REPL with commands for loading files and querying
+* Implements **unification**
+
+* Performs **SLD resolution**
+
+* Choice of search strategy:
 
 
 
-\## 📂 Project Structure
+&nbsp; * Depth-first search (`dfs`)
+
+&nbsp; * Breadth-first search (`bfs`)
+
+* REPL with commands for loading files and querying
+
+
+
+## 📂 Project Structure
 
 
 
@@ -42,39 +42,39 @@ It includes a parser, unification engine, substitution system, and an interactiv
 
 | `Type.hs`      | Core data types (Terms, Rules, Programs, Goals) |
 
-| `Parser.hs`    | Text → AST parser for Prolog programs \& queries |
+| `Parser.hs`    | Text → AST parser for Prolog programs & queries |
 
-| `Pretty.hs`    | Pretty-printing terms \& substitutions           |
+| `Pretty.hs`    | Pretty-printing terms & substitutions           |
 
 | `Uni.hs`       | Unification algorithm                           |
 
 | `Subst.hs`     | Substitution operations                         |
 
-| `Vars.hs`      | Variable extraction \& fresh name generation     |
+| `Vars.hs`      | Variable extraction & fresh name generation     |
 
 | `Rename.hs`    | Variable renaming for rule reuse                |
 
-| `SLD.hs`       | SLD resolution (DFS \& BFS)                      |
+| `SLD.hs`       | SLD resolution (DFS & BFS)                      |
 
 | `Interface.hs` | Interactive Prolog REPL (`nippl`)               |
 
 
 
-\## 🛠️ Installation
+## 🛠️ Installation
 
 
 
-\### Requirements
+### Requirements
 
 
 
-\* GHC / GHCup or Stack
+* GHC / GHCup or Stack
 
-\* Cabal (optional)
+* Cabal (optional)
 
 
 
-\### Build With Cabal
+### Build With Cabal
 
 
 
@@ -86,7 +86,7 @@ cabal build
 
 
 
-\### Build With Stack
+### Build With Stack
 
 
 
@@ -98,7 +98,7 @@ stack build
 
 
 
-\## ▶️ Running the Interpreter
+## ▶️ Running the Interpreter
 
 
 
@@ -142,7 +142,7 @@ Type :h for help.
 
 
 
-\## 🧠 REPL Commands
+## 🧠 REPL Commands
 
 
 
@@ -164,11 +164,11 @@ Type :h for help.
 
 
 
-\## 🧪 Example
+## 🧪 Example
 
 
 
-\### Prolog Program (`example.pl`)
+### Prolog Program (`example.pl`)
 
 
 
@@ -188,7 +188,7 @@ ancestor(X, Y) :- parent(X, Z), ancestor(Z, Y).
 
 
 
-\### Query in REPL
+### Query in REPL
 
 
 
@@ -210,7 +210,7 @@ No more solutions.
 
 
 
-\### Switch to BFS
+### Switch to BFS
 
 
 
@@ -224,7 +224,7 @@ Strategy set to bfs.
 
 
 
-\## ✅ Status
+## ✅ Status
 
 
 
